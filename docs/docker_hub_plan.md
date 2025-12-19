@@ -26,5 +26,9 @@ Student 2 is responsible for building and pushing the images and coordinating wi
 
 ## Docker Hub Account
 
+Student 1 profile:
+https://hub.docker.com/u/nisaksoy
+
 Student 2 profile:
 https://hub.docker.com/u/nilh2o
+
