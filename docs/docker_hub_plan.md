@@ -23,3 +23,8 @@ itu20240001/sis-project-postgres:v1.0
 
 ## Responsibility
 Student 2 is responsible for building and pushing the images and coordinating with Student 3 for testing.
+
+## Docker Hub Account
+
+Student 2 profile:
+https://hub.docker.com/u/nilh2o
