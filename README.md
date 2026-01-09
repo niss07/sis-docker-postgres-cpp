@@ -27,6 +27,11 @@ The project demonstrates:
 | **Student 2** | **Nilsu Bülbül** | 230304055 | Docker configuration, container orchestration, Dockerfile & Docker Compose support |
 | **Student 3** | **Shared (Nisa Aksoy & Nilsu Bülbül)** | — | Database layer, PostgreSQL setup, libpqxx research, database connectivity, execution testing |
 
+
+Nisa AKSOY DOCKERHUB: https://hub.docker.com/u/nisaksoy
+Nilsu BÜLBÜL DOCKERHUB: https://hub.docker.com/u/nilh2o
+
+
 > Although the project scope defines three distinct student roles, the **Student 3 responsibilities were shared between the two team members** to ensure full coverage of database-related tasks.
 
 ---
