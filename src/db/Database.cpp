@@ -1,12 +1,26 @@
-#include "db/Database.hpp"
 #include <iostream>
+#include <pqxx/pqxx>
 
-Database::Database(const std::string& connectionString)
-    : connStr(connectionString) {}
+int main() {
+    try {
+        pqxx::connection c(
+            "host=host.docker.internal port=5432 dbname=sis_db user=sis_user password=sis_password"
+        );
 
-bool Database::connect() {
-    std::cout << "[DB] Connecting using: " << connStr << std::endl;
+        if (!c.is_open()) {
+            std::cerr << "Connection failed\n";
+            return 1;
+        }
 
-    // TODO (Week 3): Replace this with real libpqxx connection test
-    return true;
+        pqxx::work txn(c);
+        auto r = txn.exec("SELECT 1;");
+        txn.commit();
+
+        std::cout << "Connected! SELECT 1 = " << r[0][0].as<int>() << std::endl;
+        return 0;
+
+    } catch (const std::exception& e) {
+        std::cerr << e.what() << std::endl;
+        return 1;
+    }
 }
